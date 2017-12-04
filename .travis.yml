@@ -1,0 +1,34 @@
+sudo: required
+language: node_js
+env:
+  global:
+  - secure:
+  - secure:
+branches:
+  only:
+    - master
+services:
+- docker
+install:
+- echo "install nothing!"
+script:
+- echo "no tests!"
+after_success:
+- docker --version
+- pip install --user awscli
+- export PATH=$PATH:$HOME/.local/bin
+- eval $(aws ecr get-login --region us-east-1)
+- docker build -t automation-testing -f Dockerfile-automation-testing .
+- docker run --rm automation-testing:latest
+- docker build -t node-project -f Dockerfile-production .
+# - docker tag
+# - docker push
+# deploy:
+# - provider: script
+#   script: scripts/deploy.sh testing
+#   on:
+#     branch: master
+# - provider: script
+#   script: scripts/deploy.sh production
+#   on:
+#     branch: release

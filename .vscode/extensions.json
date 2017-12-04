@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+      "johnpapa.angular1",
+      "johnpapa.angular2",
+      "HookyQR.beautify",
+      "streetsidesoftware.code-spell-checker",
+      "msjsdiag.debugger-for-chrome",
+      "EditorConfig.editorconfig",
+      "dbaeumer.vscode-eslint",
+      "donjayamanne.githistory",
+      "eamodio.gitlens",
+      "felipecaputo.git-project-manager",
+      "codezombiech.gitignore",
+      "DavidAnson.vscode-markdownlint",
+      "christian-kohler.npm-intellisense",
+      "eg2.vscode-npm-script",
+      "robinbentley.sass-indented",
+      "eg2.tslint"
+  ]
+}

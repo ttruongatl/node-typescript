@@ -1,0 +1,31 @@
+#node_modules
+node_modules/
+npm-debug*
+
+# Javascript files
+config/**/*.js
+config/**/*.js.map
+
+modules/**/*.js
+modules/**/*.js.map
+public/
+build
+npm-debug.log
+server.js
+server.js.map
+dist/
+logs/
+src/**/*.js
+src/**/*.js.map
+*.log
+
+# System files
+.DS_Store
+
+# Log files
+&.log
+*.info
+
+# Coverage report
+coverage/**/*
+.nyc_output
